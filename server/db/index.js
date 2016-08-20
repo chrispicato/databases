@@ -10,3 +10,6 @@ module.exports.connection = mysql.createConnection({
   password: 'hr47',
   database: 'chat'
 });
+
+module.exports.dbConnection = module.exports.connection;
+module.exports.dbConnection.connect();
